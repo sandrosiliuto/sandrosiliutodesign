@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Lab 3D | Divina Berlina x Sandro Siliuto</title>
+    <meta name="description" content="Colaboración exclusiva en Tenerife: Taller de impresión 3D y repostería vegana para familias. Diseñado por Sandro Siliuto para Divina Berlina.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&family=Pacifico&display=swap');
+        
+        :root {
+            --berlina-pink: #ff85a2;
+            --sandro-dark: #0f172a;
+            --sandro-accent: #38bdf8;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #fafafa;
+        }
+
+        .font-pacifico { font-family: 'Pacifico', cursive; }
+
+        /* Mix Design: Gradiente que une ambos mundos */
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #ff85a2 100%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-collab {
+            background: linear-gradient(90deg, var(--berlina-pink), var(--sandro-accent));
+            transition: all 0.3s ease;
+        }
+
+        .btn-collab:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(255, 133, 162, 0.5);
+        }
+
+        .logo-container img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .tech-border {
+            position: relative;
+        }
+        .tech-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--sandro-accent);
+        }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <!-- Navegación Mix -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logos Colaboración -->
+            <div class="flex items-center gap-4">
+                <a href="https://www.divinaberlina.com/" target="_blank" class="flex items-center">
+                    <img src="https://www.divinaberlina.com/wp-content/uploads/2021/04/Logo-Divina-Berlina-Web.png" alt="Logo Divina Berlina" class="h-10 md:h-12">
+                </a>
+                <span class="text-gray-300 text-xl font-light">×</span>
+                <a href="https://sandrosiliuto.github.io/web/" target="_blank" class="flex items-center">
+                    <div class="flex flex-col leading-none">
+                        <span class="text-[10px] uppercase tracking-tighter text-gray-400 font-bold">Tech by</span>
+                        <span class="text-sm font-extrabold tracking-tighter text-slate-800">SANDRO SILIUTO</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hidden lg:flex gap-8 font-semibold text-sm uppercase tracking-wider">
+                <a href="#taller" class="hover:text-[#ff85a2] transition-colors">El Proyecto</a>
+                <a href="#experiencia" class="hover:text-[#ff85a2] transition-colors">Experiencia</a>
+                <a href="#lugares" class="hover:text-[#ff85a2] transition-colors">Ubicaciones</a>
+            </div>
+
+            <a href="#inscripcion" class="btn-collab text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-md">RESERVAR PLAZA</a>
+        </div>
+    </nav>
+
+    <!-- Hero: Dark Tech meets Sweet Pink -->
+    <header class="hero-gradient pt-40 pb-24 px-4 relative overflow-hidden text-white">
+        <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+            <!-- Patrón de impresión 3D / Circuitos -->
+            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 100 L20 80 L40 90 L60 70 L80 85 L100 65" stroke="white" fill="transparent" stroke-width="0.5"/>
+            </svg>
+        </div>
+        
+        <div class="max-w-6xl mx-auto flex flex-col items-center text-center relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-8 border border-white/20">
+                <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                <span class="text-xs font-bold tracking-widest uppercase">Próximo Taller: Tenerife 2024</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Impulsa la <span class="text-[#ff85a2]">Creatividad</span> <br>
+                con Tecnología <span class="text-sky-400">3D</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl leading-relaxed font-light">
+                Una sinergia única entre la repostería artesanal de <span class="text-white font-semibold">Divina Berlina</span> y el diseño tecnológico de <span class="text-white font-semibold italic">Sandro Siliuto</span>. Niños y padres fabricando el futuro, bocado a bocado.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#taller" class="bg-white text-slate-900 px-10 py-4 rounded-2xl font-bold hover:bg-slate-100 transition-all shadow-xl">Explorar el Taller</a>
+                <a href="https://sandrosiliuto.github.io/web/" target="_blank" class="border border-white/30 backdrop-blur-md text-white px-10 py-4 rounded-2xl font-bold hover:bg-white/10 transition-all">Ver Portfolio Colaborador</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Colaboración -->
+    <section id="taller" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-10 -left-10 w-32 h-32 bg-pink-100 rounded-full -z-10 opacity-50"></div>
+                    <div class="bg-slate-100 rounded-[2.5rem] overflow-hidden shadow-2xl">
+                         <!-- Placeholder representativo del mix tech-food -->
+                         <div class="aspect-video bg-slate-800 flex items-center justify-center text-white text-center p-8">
+                            <div>
+                                <i class="fas fa-microchip text-5xl mb-4 text-sky-400"></i>
+                                <p class="font-bold text-2xl">+ <i class="fas fa-cookie-bite text-pink-400"></i></p>
+                                <p class="mt-4 text-sm text-slate-400">Diseño Digital Aplicado a la Gastronomía Vegana</p>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-6 leading-tight">
+                        La fusión del arte <br>
+                        <span class="text-[#ff85a2]">Manual</span> y <span class="text-sky-500">Digital</span>
+                    </h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Este curso no es solo cocina; es una introducción al mundo **Maker**. Bajo la visión tecnológica de Sandro Siliuto, los niños aprenderán que la ingeniería puede ser tan dulce como una berlina.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 flex-shrink-0 bg-sky-50 rounded-xl flex items-center justify-center text-sky-500 shadow-sm">
+                                <i class="fas fa-bezier-curve text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Modelado Personalizado</h4>
+                                <p class="text-sm text-gray-500">Transformamos dibujos a mano alzada en archivos STL listos para imprimir.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-12 h-12 flex-shrink-0 bg-pink-50 rounded-xl flex items-center justify-center text-[#ff85a2] shadow-sm">
+                                <i class="fas fa-apple-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Materiales Biocompatibles</h4>
+                                <p class="text-sm text-gray-500">Utilizamos filamentos derivados del maíz, 100% seguros y aptos para contacto con alimentos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicaciones - Diseño Minimalista Tech -->
+    <section id="lugares" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-16 uppercase tracking-widest text-sky-400">Ubicaciones del Taller</h2>
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div class="group p-10 bg-white/5 border border-white/10 rounded-3xl hover:bg-white/10 transition-all cursor-pointer">
+                    <div class="w-16 h-16 bg-[#ff85a2] rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg shadow-pink-500/20">
+                        <i class="fas fa-building text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Santa Cruz</h3>
+                    <p class="text-slate-400">CC Meridiano</p>
+                    <p class="text-xs mt-4 text-sky-400 font-bold opacity-0 group-hover:opacity-100 transition-opacity">VER EN GOOGLE MAPS</p>
+                </div>
+                <div class="group p-10 bg-white/5 border border-white/10 rounded-3xl hover:bg-white/10 transition-all cursor-pointer">
+                    <div class="w-16 h-16 bg-sky-500 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg shadow-sky-500/20">
+                        <i class="fas fa-university text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">La Laguna</h3>
+                    <p class="text-slate-400">C/ Herradores</p>
+                    <p class="text-xs mt-4 text-sky-400 font-bold opacity-0 group-hover:opacity-100 transition-opacity">VER EN GOOGLE MAPS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inscripción Mix -->
+    <section id="inscripcion" class="py-24 bg-gray-50 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <div class="glass-card p-8 md:p-16 rounded-[3rem] shadow-2xl border-2 border-white">
+                <div class="text-center mb-10">
+                    <div class="inline-block px-4 py-1 bg-pink-100 text-[#ff85a2] rounded-full text-xs font-bold mb-4">RESERVAS ABIERTAS</div>
+                    <h2 class="text-4xl font-extrabold text-slate-900">Únete a la experiencia</h2>
+                </div>
+
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-gray-400 uppercase ml-2">Datos del Alumno</label>
+                            <input type="text" placeholder="Nombre y Edad" class="w-full p-4 rounded-2xl border-none bg-slate-100 focus:ring-2 focus:ring-[#ff85a2] outline-none">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-gray-400 uppercase ml-2">Sede Preferida</label>
+                            <select class="w-full p-4 rounded-2xl border-none bg-slate-100 focus:ring-2 focus:ring-sky-400 outline-none">
+                                <option>Santa Cruz (CC Meridiano)</option>
+                                <option>La Laguna (Centro)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-400 uppercase ml-2">Email de contacto (Padre/Madre)</label>
+                        <input type="email" placeholder="ejemplo@email.com" class="w-full p-4 rounded-2xl border-none bg-slate-100 focus:ring-2 focus:ring-[#ff85a2] outline-none">
+                    </div>
+                    
+                    <button type="submit" class="w-full btn-collab text-white font-bold py-5 rounded-2xl shadow-xl text-lg uppercase tracking-widest">
+                        Confirmar Pre-Inscripción
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Collaboration -->
+    <footer class="bg-white py-16 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            <div class="flex items-center gap-6 mb-8 opacity-60 grayscale hover:grayscale-0 transition-all">
+                <img src="https://www.divinaberlina.com/wp-content/uploads/2021/04/Logo-Divina-Berlina-Web.png" alt="Logo Divina Berlina" class="h-8">
+                <div class="h-6 w-[1px] bg-gray-300"></div>
+                <span class="text-lg font-black tracking-tighter">SANDRO SILIUTO</span>
+            </div>
+            
+            <p class="text-center text-gray-400 text-sm max-w-md mb-8">
+                Un proyecto nacido de la pasión por la tecnología y la gastronomía de calidad. Tenerife, 2024.
+            </p>
+            
+            <div class="flex gap-8 mb-12">
+                <a href="https://www.instagram.com/divinaberlina" class="text-slate-400 hover:text-[#ff85a2] transition-colors"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="https://sandrosiliuto.github.io/web/" class="text-slate-400 hover:text-sky-500 transition-colors"><i class="fas fa-globe text-xl"></i></a>
+                <a href="https://wa.me/34622826546" class="text-slate-400 hover:text-green-500 transition-colors"><i class="fab fa-whatsapp text-xl"></i></a>
+            </div>
+            
+            <div class="text-[10px] text-gray-300 font-bold tracking-[0.3em] uppercase">
+                Artisanal Vegan Pastry x Digital Engineering
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
